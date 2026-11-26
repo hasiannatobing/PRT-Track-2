@@ -1,0 +1,18 @@
+# Optional: a HAPI FHIR R4 server to run the simulator against a real FHIR API
+# while the EMR-V2 FHIR additions are not merged yet.
+#
+#   docker compose -f track2-medication/docker-compose.yml up -d
+#   python track2-medication/simulator/run.py load-demo --fhir http://localhost:8096/fhir
+#   python track2-medication/simulator/run.py serve     --fhir http://localhost:8096/fhir
+#
+# Not yet tested end to end (written without a Docker daemon). Demo mode
+# (`run.py serve` with no --fhir) needs nothing but Python.
+services:
+  hapi:
+    image: hapiproject/hapi:v7.4.0
+    ports:
+      - "8096:8080"
+    environment:
+      hapi.fhir.fhir_version: R4
+      hapi.fhir.allow_external_references: "true"
+      hapi.fhir.client_id_strategy: ANY

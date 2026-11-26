@@ -27,7 +27,7 @@ FHIR_TOKEN=... python run.py serve --fhir ...                # bearer token if t
 | `AllergyIntolerance?patient=` | `MedicationStatement` (what the patient says they take) |
 | `MedicationDispense?prescription=`, `MedicationStatement?patient=`, `Patient/{id}` | |
 
-## The workflow (slide 7)
+## The workflow
 
 1. **Worklist** lists active prescriptions with refills left, allergy result and timeline flags.
 2. **Review** one order: refill status, allergy check, timeline, history.

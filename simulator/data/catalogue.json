@@ -1,0 +1,32 @@
+{
+  "_comment": "Synthetic, limited test catalogue for the simulator. Not a clinical reference. ATC codes are WHO ATC; every rule below must be confirmed with a clinician before use beyond teaching.",
+  "product_system": "urn:fhtw:track2:product",
+  "products": [
+    {"code": "AMOX500", "display": "Amoxicillin 500 mg capsule", "atc": "J01CA04", "ingredients": ["amoxicillin"]},
+    {"code": "AMOX250", "display": "Amoxicillin 250 mg capsule", "atc": "J01CA04", "ingredients": ["amoxicillin"]},
+    {"code": "AMOXCLAV875", "display": "Amoxicillin 875 mg + clavulanic acid 125 mg tablet", "atc": "J01CR02", "ingredients": ["amoxicillin", "clavulanic acid"]},
+    {"code": "AZI250", "display": "Azithromycin 250 mg tablet", "atc": "J01FA10", "ingredients": ["azithromycin"]},
+    {"code": "RAMI5", "display": "Ramipril 5 mg tablet", "atc": "C09AA05", "ingredients": ["ramipril"]},
+    {"code": "RAMI2.5", "display": "Ramipril 2.5 mg tablet", "atc": "C09AA05", "ingredients": ["ramipril"]},
+    {"code": "MET1000", "display": "Metformin 1000 mg tablet", "atc": "A10BA02", "ingredients": ["metformin"]},
+    {"code": "MET500", "display": "Metformin 500 mg tablet", "atc": "A10BA02", "ingredients": ["metformin"]},
+    {"code": "IBU400", "display": "Ibuprofen 400 mg tablet", "atc": "M01AE01", "ingredients": ["ibuprofen"]},
+    {"code": "DICLO50", "display": "Diclofenac 50 mg tablet", "atc": "M01AB05", "ingredients": ["diclofenac"]},
+    {"code": "PARA500", "display": "Paracetamol 500 mg tablet", "atc": "N02BE01", "ingredients": ["paracetamol"]},
+    {"code": "PANTO40", "display": "Pantoprazole 40 mg tablet", "atc": "A02BC02", "ingredients": ["pantoprazole"]}
+  ],
+  "allergens": [
+    {"label": "Penicillins (class)", "kind": "class", "names": ["penicillins", "penicillin"], "atc_prefixes": ["J01C"]},
+    {"label": "NSAIDs (class)", "kind": "class", "names": ["nsaids", "nsaid", "non-steroidal anti-inflammatory"], "atc_prefixes": ["M01A"]},
+    {"label": "Amoxicillin (substance)", "kind": "substance", "names": ["amoxicillin"], "ingredients": ["amoxicillin"]},
+    {"label": "Ibuprofen (substance)", "kind": "substance", "names": ["ibuprofen"], "ingredients": ["ibuprofen"]},
+    {"label": "Antibiotics (unspecified)", "kind": "vague", "names": ["antibiotic", "antibiotics"], "atc_prefixes": ["J01"]}
+  ],
+  "duplicate_groups": [
+    {"label": "NSAIDs", "atc_prefix": "M01A"},
+    {"label": "ACE inhibitors", "atc_prefix": "C09A"},
+    {"label": "Penicillins", "atc_prefix": "J01C"},
+    {"label": "Proton pump inhibitors", "atc_prefix": "A02BC"},
+    {"label": "Biguanides", "atc_prefix": "A10BA"}
+  ]
+}
